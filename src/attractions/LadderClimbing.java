@@ -4,9 +4,9 @@ import attractions.general.Attraction;
 
 import java.math.BigDecimal;
 
-public class Hawaii extends Attraction {
-    private final String name = "Hawaii";
-    private final BigDecimal price = new BigDecimal("2.90");
+public class LadderClimbing extends Attraction {
+    private final String name = "ladder climbing";
+    private final BigDecimal price = new BigDecimal("5.00");
     private final int surfaceArea = 100;
 
     @Override
@@ -21,6 +21,6 @@ public class Hawaii extends Attraction {
 
     @Override
     public void run() {
-        System.out.println("Hawaii is sunny!");
+        System.out.println("The ladders are being climbed!");
     }
 }

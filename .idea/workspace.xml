@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56ddc255-0058-4a4e-897e-45b87c13104d" name="Changes" comment="Created classes">
+    <list default="true" id="56ddc255-0058-4a4e-897e-45b87c13104d" name="Changes" comment="Created draaien method, populated fields">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/attractions/general/Attraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/control/Carnival.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/attractions/BotsAutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/BotsAutos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/attractions/BotsAutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/BumperCars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/attractions/Hawaii.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/Hawaii.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/attractions/LadderKlimmen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/LadderKlimmen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/attractions/SpiegelPaleis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/SpiegelPaleis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/attractions/Spin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/Spin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/attractions/SpookHuis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/SpookHuis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/attractions/general/Attractie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/general/Attractie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/attractions/LadderKlimmen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/LadderClimbing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/attractions/SpiegelPaleis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/MirrorPalace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/attractions/Spin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/Spider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/attractions/SpookHuis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/attractions/HauntedHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/attractions/general/Attractie.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +58,20 @@
     "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="kermisopdracht" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,11 +88,34 @@
       <option name="project" value="LOCAL" />
       <updated>1680514204932</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created draaien method, populated fields">
+      <created>1680515399393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680515399393</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created classes" />
+    <MESSAGE value="Created draaien method, populated fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created draaien method, populated fields" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>3</line>
+          <properties class="Main" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

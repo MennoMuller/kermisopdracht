@@ -1,5 +1,10 @@
+import control.Carnival;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Carnival carnival = new Carnival();
+        while (carnival.isActive()) {
+            carnival.processInput();
+        }
     }
 }
