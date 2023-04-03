@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Carnival {
     private final ArrayList<Attraction> attractions = new ArrayList<>();
+    private final CashRegister cashRegister = new CashRegister();
 
     private boolean active = true;
 
@@ -28,6 +29,8 @@ public class Carnival {
         for (int i = 0; i < attractions.size(); i++) {
             System.out.println(i + 1 + ": " + attractions.get(i).getName());
         }
+        System.out.println("O: revenue");
+        System.out.println("K: tickets");
         System.out.println("Q: quit");
         Scanner input = new Scanner(System.in);
         System.out.print("Choose action: ");
@@ -37,13 +40,42 @@ public class Carnival {
             System.out.println("Quitting program.");
             return;
         }
+        if (command.equalsIgnoreCase("o")) {
+            displayRevenue();
+            System.out.println("Press enter to continue.");
+            input.nextLine();
+            return;
+        }
+        if (command.equalsIgnoreCase("k")) {
+            displayTickets();
+            System.out.println("Press enter to continue.");
+            input.nextLine();
+            return;
+        }
         try {
             int selected = Integer.parseInt(command);
-            attractions.get(selected - 1).run();
+            Attraction attraction = attractions.get(selected - 1);
+            attraction.run();
+            cashRegister.addRevenue(attraction.getPrice());
         } catch (Exception e) {
             System.out.println("Unrecognized command");
             processInput();
         }
+        System.out.println("Press enter to continue.");
+        input.nextLine();
     }
 
+    public void displayRevenue() {
+        for (int i = 0; i < attractions.size(); i++) {
+            System.out.println(i + 1 + ": " + attractions.get(i).getName() + " $" + attractions.get(i).getRevenue());
+        }
+        System.out.println("Total: $" + cashRegister.getRevenue());
+    }
+
+    public void displayTickets() {
+        for (int i = 0; i < attractions.size(); i++) {
+            System.out.println(i + 1 + ": " + attractions.get(i).getName() + " " + attractions.get(i).getTickets() + " tickets");
+        }
+        System.out.println("Total: " + cashRegister.getTickets() + " tickets");
+    }
 }
